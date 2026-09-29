@@ -1,0 +1,43 @@
+body {
+    background-color: #E1EAF9;
+    color: #1E252B;
+    font-family: "Merriweather", Georgia, serif;
+}
+
+header {
+    background-color: #0F2439;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5em;
+}
+
+h1 {
+    line-height: 1.3;
+}
+
+h2 {
+    color: #4494DA;
+}
+
+nav {
+    text-align: center;
+    padding: .75em;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0F2439;
+    color: #E1EAF9;
+    text-align: center;
+    padding: 1em;
+    font-size: .75em;
+    font-style: italic;
+}
+
+#wrapper {
+    width: 80%;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 2em;
+}
