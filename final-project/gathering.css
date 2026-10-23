@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100;
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg) */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("...");
+
+  /* Set a specific height */
+  height: 75%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+nav {
+  background-color: #000000;
+  text-align: center;
+  font-weight: bold;
+  height: 10%;
+  width: 100%;
+  position: sticky;
+  z-index: 10;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111111;
+}
+
+.left_player_life_counter {
+    float: left;
+    width: 50%;
+}
+.right_player_life_counter {
+    float: right;
+    width: 50%;
+}
+
+
+footer {
+  background-color: #000000;
+  color: #E1EAF9;
+  font-size: .75em;
+  font-style: italic;
+  text-align: center;
+  padding: 2.25em 1.5em;
+}
