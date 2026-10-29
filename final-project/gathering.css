@@ -5,26 +5,20 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100;
+    width: 100%;
     height: 100%;
 }
 
-/* The hero image */
+
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg) */
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("...");
-
-  /* Set a specific height */
   height: 75%;
-
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-/* Place text in the middle of the image */
 .hero-text {
   text-align: center;
   position: absolute;
@@ -38,7 +32,6 @@ nav {
   background-color: #000000;
   text-align: center;
   font-weight: bold;
-  height: 10%;
   width: 100%;
   position: sticky;
   z-index: 10;
@@ -46,10 +39,12 @@ nav {
 
 nav ul {
   list-style-type: none;
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #00000000;
 }
 
 nav ul li {
@@ -62,6 +57,14 @@ nav ul li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  height:fit-content;
+}
+
+nav ul li img {
+    width: 35px;
+    height: 35px;
+    max-width: 100%;
+    display: block;
 }
 
 nav ul li a:hover {
@@ -85,4 +88,5 @@ footer {
   font-style: italic;
   text-align: center;
   padding: 2.25em 1.5em;
+  height: 13%;
 }
