@@ -9,9 +9,8 @@ body, html {
     height: 100%;
 }
 
-
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("...");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./images/LifeLink.PNG");
   height: 75%;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,16 +69,32 @@ nav ul li img {
 nav ul li a:hover {
   background-color: #111111;
 }
-
-.left_player_life_counter {
-    float: left;
-    width: 50%;
+.game_space {
+  width: 100%;
+  min-height: 87vh;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.left_player_life_counter,
 .right_player_life_counter {
-    float: right;
-    width: 50%;
+  display: flex;
+  background-color: #272727;
+  color: #FFFFFF;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 43.5vh;
+  border-style: solid;
+  border-color: #FFFFFF;
 }
 
+.left_player_life_counter button,
+.right_player_life_counter button {
+  width: 15%;
+  height: 50%;
+  font-size: 2em;
+}
 
 footer {
   background-color: #000000;
@@ -89,4 +104,25 @@ footer {
   text-align: center;
   padding: 2.25em 1.5em;
   height: 13%;
+}
+
+#start_button {
+  font: inherit;
+  font-weight: bold;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: .8em 1.75em;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+#start_button:hover {
+  background-color: #4a4a4a;
+}
+
+#start_button:focus {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 2px;
 }
